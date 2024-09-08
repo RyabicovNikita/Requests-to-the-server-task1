@@ -4,7 +4,7 @@ export const LayoutTodoList = ({ todoList }) => (
 		<div className="container__scrollable">
 			<ul className="scrollable__todoList">
 				{todoList?.map((todo) => (
-					<li className="todoList__todo">
+					<li className="todoList__todo" key={todo.id}>
 						<input
 							className="todo__completed-checkbox hidden"
 							id="todoCompleted"
